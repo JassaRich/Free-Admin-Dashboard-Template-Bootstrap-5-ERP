@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<title>FixedHeader</title>
+		
+		<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+		
+		<link rel="stylesheet" href="/media/css/site.css?_=aadaa7a732793b5fe2d64919b0c6763c1">
+		<!--[if lte IE 9]>
+		<link rel="stylesheet" type="text/css" href="/media/css/ie.css" />
+		<![endif]-->
+		
+		<style>
+			
+		</style>
+
+		<script src="/media/js/site.js?_=e469aaf14ac009df7cbcc69a65357089"></script>
+		<script src="/media/js/dynamic.php" async></script>
+		
+		<script>
+			
+		</script>
+	</head>
+	<body class="">
+		<a name="top"></a>
+
+		<div class="fw-background">
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="fw-container">
+			<div class="fw-header">
+				<div class="nav-ct">
+					<a href="//cloudtables.com">
+						<div>
+							<img src="/media/images/cloudtables.svg" alt="CloudTables" />
+							No-code DataTables, with full editing.<br>
+							Create database-driven applications and embed them anywhere.
+						</div>
+					</a>
+				</div>
+
+				<div class="nav-master">
+					<div class="nav-item">
+						<a href="https://cloudtables.com">CloudTables</a>
+					</div>
+					<div class="nav-item active">
+						<a href="/">DataTables</a>
+					</div>
+					<div class="nav-item">
+						<a href="https://editor.datatables.net">Editor</a>
+					</div>
+				</div>
+
+				<div class="nav-search">
+					<div class="nav-item i-manual">
+						<a href="/manual">Manual</a>
+					</div>
+					<div class="nav-item i-download">
+						<a href="/download">Download</a>
+					</div>
+					<div class="nav-item i-user">
+						<div class="account"></div>
+					</div>
+					<div class="nav-item search">
+						<form action="/q/" method="GET">
+							<input type="text" name="q" placeholder="Search . . ." autocomplete="off">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="fw-hero">
+				
+			</div>
+
+			<div class="fw-nav">
+				<div class="nav-main">
+					<ul><li class=" sub"><a href="/examples/index">Examples</a></li><li class=" sub"><a href="/manual/index">Manual</a></li><li class=" sub"><a href="/reference/index">Reference</a></li><li class="sub-active sub"><a href="/extensions/index">Extensions</a><ul><li class=" sub"><a href="/extensions/autofill">AutoFill</a></li><li class=" sub"><a href="/extensions/buttons">Buttons</a></li><li class=" sub"><a href="/extensions/colreorder">ColReorder</a></li><li class=""><a href="/extensions/editor">Editor</a></li><li class=" sub"><a href="/extensions/fixedcolumns">FixedColumns</a></li><li class="active sub"><a href="/extensions/fixedheader">FixedHeader</a><ul><li class=""><a href="/extensions/fixedheader/examples">Examples</a></li><li class=""><a href="/extensions/fixedheader/options">Reference: Options</a></li><li class=""><a href="/extensions/fixedheader/api">Reference: API</a></li></ul></li><li class=" sub"><a href="/extensions/keytable">KeyTable</a></li><li class=" sub"><a href="/extensions/responsive">Responsive</a></li><li class=" sub"><a href="/extensions/rowgroup">RowGroup</a></li><li class=" sub"><a href="/extensions/rowreorder">RowReorder</a></li><li class=" sub"><a href="/extensions/scroller">Scroller</a></li><li class=" sub"><a href="/extensions/searchbuilder">SearchBuilder</a></li><li class=" sub"><a href="/extensions/searchpanes">SearchPanes</a></li><li class=" sub"><a href="/extensions/select">Select</a></li><li class=" separator sub"><a href="/extensions/datetime"><span class="tag">Standalone:</span> DateTime</a></li><li class=" separator sub"><a href="/extensions/colvis"><span class="tag">Legacy:</span> ColVis</a></li><li class=" sub"><a href="/extensions/tabletools"><span class="tag">Legacy:</span> TableTools</a></li></ul></li><li class=" sub"><a href="/plug-ins/index">Plug-ins</a></li><li class=""><a href="/blog/index">Blog</a></li><li class=""><a href="/forums/index">Forums</a></li><li class=""><a href="/support/index">Support</a></li><li class=""><a href="/faqs/index">FAQs</a></li><li class=""><a href="/download/index">Download</a></li><li class=""><a href="/purchase/index">Purchase</a></li></ul>
+				</div>
+
+				<div class="mobile-show">
+					<a><i>Show site navigation</i></a>
+				</div>
+			</div>
+
+			<div class="fw-body">
+				<div class="content">
+					
+					
+					<h1 class="page_title" title="FixedHeader">FixedHeader</h1>
+
+					
+					<aside>
+  <h2 data-anchor="Versions"><a name="Versions"></a>Versions</h2>
+  
+  <p>Please note that the documentation presented on these pages refer to FixedHeader 3+. All of the reference materials state what version each property is available from. For older versions, please refer to the <a href="//legacy.datatables.net/extensions/fixedheader">legacy documentation</a>, although note that the legacy versions are no longer supported.</p>
+</aside>
+
+<p>When displaying tables with a particularly large amount of data shown on each page, it can be useful to have the table's header and / or footer fixed to the top or bottom of the scrolling window. This lets your users quickly determine what each column refers to rather than needing to scroll back to the top of the table.</p>
+
+<p>FixedHeader provides the ability to perform this action with DataTables tables. It operates by detaching the header and footer elements from the host table and attaching them to the top or bottom of the screen as required by the scrolling position of the window. This ensures that FixedColumns is fully compatible with DataTables and you can add complex interactions such as search elements in the table footer, just as you would with any other table.</p>
+
+<p>Please note that FixedHeader is not currently compatible with tables that have the scrolling features of DataTables enabled (<a href="//datatables.net/reference/option/scrollX"><code class="option" title="DataTables initialisation option">scrollX</code></a> / <a href="//datatables.net/reference/option/scrollY"><code class="option" title="DataTables initialisation option">scrollY</code></a>). Please refer to the <a href="/download/compatibility">compatibility table</a> for full compatibility details.</p>
+
+<h2 data-anchor="Download"><a name="Download"></a>Download</h2>
+
+<p>The easiest way to get and use FixedHeader is to use the <a href="/download">DataTables download builder</a> where you can select the software that you wish to use on your page and have a single Javascript and CSS file created and hosted for you.</p>
+
+<p>Alternatively, the <a href="/download/release">individual files</a> can be included on your page, <a href="/download/packages">a release package downloaded</a> or the <a href="https://github.com/DataTables/FixedHeader">source control repository cloned on GitHub</a>.</p>
+
+<h2 data-anchor="Initialisation"><a name="Initialisation"></a>Initialisation</h2>
+
+<p>FixedHeader can be initialised and used in two different ways:</p>
+
+<ul class="markdown">
+<li>As part of the DataTables constructor with the <a href="//datatables.net/reference/option/fixedHeader"><code class="option" title="FixedHeader initialisation option">fixedHeader</code></a> configuration option</li>
+<li>A <code>new</code> constructor</li>
+</ul>
+
+<h3 data-anchor="In-DataTables"><a name="In-DataTables"></a>In DataTables</h3>
+
+<p>FixedHeader can be initialised on a DataTable by using the <a href="//datatables.net/reference/option/fixedHeader"><code class="option" title="FixedHeader initialisation option">fixedHeader</code></a> option in the DataTables options object - this is simply a boolean value, although it is also possible to use an object for fine grained control (see the reference documentation):</p>
+
+<pre><code class="multiline language-js">$('#myTable').DataTable( {
+    fixedHeader: true
+} );
+</code></pre>
+
+<h3 data-anchor="Constructor"><a name="Constructor"></a>Constructor</h3>
+
+<p>Alternatively, FixedHeader can be added to a table after it has been constructed using the Javascript <code>new</code> keyword with the <code>$.fn.dataTable.FixedHeader</code> function. This function takes two parameters:</p>
+
+<ol class="markdown">
+<li>The DataTable instance to apply the buttons to</li>
+<li>The FixedHeader options (this is the same as the options available for the <a href="//datatables.net/reference/option/fixedHeader"><code class="option" title="FixedHeader initialisation option">fixedHeader</code></a> option.</li>
+</ol>
+
+<pre><code class="multiline language-js">var table = $('#myTable').DataTable();
+
+new $.fn.dataTable.FixedHeader( table, {
+    // options
+} );
+</code></pre>
+
+<h2 data-anchor="Features"><a name="Features"></a>Features</h2>
+
+<p>FixedHeader adds the following features to DataTables:</p>
+
+<ul class="markdown">
+<li>Fix the table header to the top of a scrolling window</li>
+<li>Optionally fix the table footer to the bottom of a scrolling window</li>
+<li>Full integration with Bootstrap and other DataTables supported styling frameworks</li>
+<li>Integration with other DataTables extensions such as Responsive and ColReorder</li>
+</ul>
+
+				</div>
+			</div>
+
+			<div class="fw-page-nav">
+				<div class="page-nav">
+					<div class="page-nav-title">Page navigation</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fw-footer">
+			<div class="skew"></div>
+			<div class="skew-bg"></div>
+			<div class="copyright">
+				<h4>DataTables</h4>
+				<p>
+					DataTables designed and created by <a href="//sprymedia.co.uk">SpryMedia Ltd</a>.<br>
+					&copy; 2007-2021 <a href="/license/mit">MIT licensed</a>. <a href="/privacy">Privacy policy</a>. <a href="/supporters">Supporters</a>.<br>
+					SpryMedia Ltd is registered in Scotland, company no. SC456502.
+				</p>
+			</div>
+		</div>
+
+		<script>
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-365466-5']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</body>
+</html>

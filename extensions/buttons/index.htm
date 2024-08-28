@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<title>Buttons</title>
+		
+		<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+		
+		<link rel="stylesheet" href="/media/css/site.css?_=aadaa7a732793b5fe2d64919b0c6763c1">
+		<!--[if lte IE 9]>
+		<link rel="stylesheet" type="text/css" href="/media/css/ie.css" />
+		<![endif]-->
+		
+		<style>
+			
+		</style>
+
+		<script src="/media/js/site.js?_=e469aaf14ac009df7cbcc69a65357089"></script>
+		<script src="/media/js/dynamic.php" async></script>
+		
+		<script>
+			
+		</script>
+	</head>
+	<body class="">
+		<a name="top"></a>
+
+		<div class="fw-background">
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<div class="fw-container">
+			<div class="fw-header">
+				<div class="nav-ct">
+					<a href="//cloudtables.com">
+						<div>
+							<img src="/media/images/cloudtables.svg" alt="CloudTables" />
+							No-code DataTables, with full editing.<br>
+							Create database-driven applications and embed them anywhere.
+						</div>
+					</a>
+				</div>
+
+				<div class="nav-master">
+					<div class="nav-item">
+						<a href="https://cloudtables.com">CloudTables</a>
+					</div>
+					<div class="nav-item active">
+						<a href="/">DataTables</a>
+					</div>
+					<div class="nav-item">
+						<a href="https://editor.datatables.net">Editor</a>
+					</div>
+				</div>
+
+				<div class="nav-search">
+					<div class="nav-item i-manual">
+						<a href="/manual">Manual</a>
+					</div>
+					<div class="nav-item i-download">
+						<a href="/download">Download</a>
+					</div>
+					<div class="nav-item i-user">
+						<div class="account"></div>
+					</div>
+					<div class="nav-item search">
+						<form action="/q/" method="GET">
+							<input type="text" name="q" placeholder="Search . . ." autocomplete="off">
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="fw-hero">
+				
+			</div>
+
+			<div class="fw-nav">
+				<div class="nav-main">
+					<ul><li class=" sub"><a href="/examples/index">Examples</a></li><li class=" sub"><a href="/manual/index">Manual</a></li><li class=" sub"><a href="/reference/index">Reference</a></li><li class="sub-active sub"><a href="/extensions/index">Extensions</a><ul><li class=" sub"><a href="/extensions/autofill">AutoFill</a></li><li class="active sub"><a href="/extensions/buttons">Buttons</a><ul><li class=""><a href="/extensions/buttons/config">Button configuration</a></li><li class=""><a href="/extensions/buttons/built-in">Built-in buttons</a></li><li class=""><a href="/extensions/buttons/custom">Custom buttons</a></li><li class=""><a href="/extensions/buttons/examples">Examples</a></li><li class=""><a href="/extensions/buttons/options">Reference: Options</a></li><li class=""><a href="/extensions/buttons/api">Reference: API</a></li><li class=""><a href="/extensions/buttons/events">Reference: Events</a></li><li class=""><a href="/extensions/buttons/buttons">Reference: Buttons</a></li><li class=""><a href="/extensions/buttons/types">Reference: Types</a></li></ul></li><li class=" sub"><a href="/extensions/colreorder">ColReorder</a></li><li class=""><a href="/extensions/editor">Editor</a></li><li class=" sub"><a href="/extensions/fixedcolumns">FixedColumns</a></li><li class=" sub"><a href="/extensions/fixedheader">FixedHeader</a></li><li class=" sub"><a href="/extensions/keytable">KeyTable</a></li><li class=" sub"><a href="/extensions/responsive">Responsive</a></li><li class=" sub"><a href="/extensions/rowgroup">RowGroup</a></li><li class=" sub"><a href="/extensions/rowreorder">RowReorder</a></li><li class=" sub"><a href="/extensions/scroller">Scroller</a></li><li class=" sub"><a href="/extensions/searchbuilder">SearchBuilder</a></li><li class=" sub"><a href="/extensions/searchpanes">SearchPanes</a></li><li class=" sub"><a href="/extensions/select">Select</a></li><li class=" separator sub"><a href="/extensions/datetime"><span class="tag">Standalone:</span> DateTime</a></li><li class=" separator sub"><a href="/extensions/colvis"><span class="tag">Legacy:</span> ColVis</a></li><li class=" sub"><a href="/extensions/tabletools"><span class="tag">Legacy:</span> TableTools</a></li></ul></li><li class=" sub"><a href="/plug-ins/index">Plug-ins</a></li><li class=""><a href="/blog/index">Blog</a></li><li class=""><a href="/forums/index">Forums</a></li><li class=""><a href="/support/index">Support</a></li><li class=""><a href="/faqs/index">FAQs</a></li><li class=""><a href="/download/index">Download</a></li><li class=""><a href="/purchase/index">Purchase</a></li></ul>
+				</div>
+
+				<div class="mobile-show">
+					<a><i>Show site navigation</i></a>
+				</div>
+			</div>
+
+			<div class="fw-body">
+				<div class="content">
+					
+					
+					<h1 class="page_title" title="Buttons">Buttons</h1>
+
+					
+					<p>A common UI paradigm to use with interactive tables is to present buttons that will trigger some action - that may be to alter the table's state, modify the data in the table, gather the data from the table or even to activate some external process. Showing such buttons is an interface that end users are comfortable with, making them feel at home with the table.</p>
+
+<p>The <em>Buttons</em> library for DataTables provides a framework with common options and API that can be used with DataTables, but is also very extensible, recognising that you will likely want to use buttons which perform an action unique to your applications.</p>
+
+<p>Buttons has <a href="built-in">four sets of plug-ins</a> that are part of the core software - they are not built into the core, but rather than be included as and when you need them, selecting only the software you require. Other extensions such as <a href="//editor.datatables.net">Editor</a> and <a href="/extensions/select">Select</a> also provide buttons for use with this library, with actions unique to their own behaviours. This ensures a consistent interface for the interactions performed with your tables.</p>
+
+<h2 data-anchor="Download"><a name="Download"></a>Download</h2>
+
+<p>The easiest way to get and use Buttons is to use the <a href="/download">DataTables download builder</a> where you can select the software that you wish to use on your page and have a single Javascript and CSS file created and hosted for you.</p>
+
+<p>Alternatively, the <a href="/download/release">individual files</a> can be included on your page, <a href="/download/packages">a release package downloaded</a> or the <a href="https://github.com/DataTables/Buttons">source control repository cloned on GitHub</a>.</p>
+
+<h2 data-anchor="Initialisation"><a name="Initialisation"></a>Initialisation</h2>
+
+<p>The Buttons library can be initialised and used in two different ways:</p>
+
+<ul class="markdown">
+<li>As part of the DataTables constructor with the <a href="//datatables.net/reference/option/buttons"><code class="option" title="Buttons initialisation option">buttons</code></a> configuration option</li>
+<li>A <code>new</code> constructor</li>
+</ul>
+
+<p>It is important to note that multiple instances of Buttons can be created for use with a DataTable. This can be particularly useful if you want to present different <em>sets</em> of buttons to the end user - for example above and below the table.</p>
+
+<h3 data-anchor="In-DataTables"><a name="In-DataTables"></a>In DataTables</h3>
+
+<p>As part of the DataTables constructor, the <a href="//datatables.net/reference/option/buttons"><code class="option" title="Buttons initialisation option">buttons</code></a> option can be given as an array of the buttons you wish to show - this is typically just the button name, although you can <a href="config">provide options</a> to customise the button's actions:</p>
+
+<pre><code class="multiline language-js">$('#myTable').DataTable( {
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+</code></pre>
+
+<p>When using this method of initialisation, you may also wish to use the <a href="//datatables.net/reference/option/dom"><code class="option" title="DataTables initialisation option">dom</code></a> option to tell DataTables where to display the buttons - see below.</p>
+
+<p>The <a href="//datatables.net/reference/option/buttons"><code class="option" title="Buttons initialisation option">buttons</code></a> option can also be given as an object to provide more control over the behaviour of Buttons. See the reference documentation for details.</p>
+
+<h3 data-anchor="Constructor"><a name="Constructor"></a>Constructor</h3>
+
+<p>Button instances can also be created using the Javascript <code>new</code> keyword with the <code>$.fn.dataTable.Buttons</code> function. This function takes two parameters:</p>
+
+<ol class="markdown">
+<li>The DataTable instance to apply the buttons to</li>
+<li>The button options (this is the same as the options available for the <a href="//datatables.net/reference/option/buttons"><code class="option" title="Buttons initialisation option">buttons</code></a> option.</li>
+</ol>
+
+<pre><code class="multiline language-js">var table = $('#myTable').DataTable();
+
+new $.fn.dataTable.Buttons( table, {
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+</code></pre>
+
+<p>This method of initialisation is particularly useful for cases when you wish to present multiple button instances, since only a single instance can be created using the <a href="//datatables.net/reference/option/buttons"><code class="option" title="Buttons initialisation option">buttons</code></a> option.</p>
+
+<h2 data-anchor="Displaying-the-buttons"><a name="Displaying-the-buttons"></a>Displaying the buttons</h2>
+
+<p>With the Buttons instance created we still need to display the buttons somewhere on the page so the end user can interact with them! Once again, there are two ways of doing this:</p>
+
+<ul class="markdown">
+<li><a href="//datatables.net/reference/option/dom"><code class="option" title="DataTables initialisation option">dom</code></a> - DataTables' DOM control parameter - this option is only available if you also use <a href="//datatables.net/reference/option/buttons"><code class="option" title="DataTables initialisation option">buttons</code></a>. Additionally, if you use anything other than the DataTables default styling, you probably don't want to use this option!</li>
+<li>Direct insertion using the API</li>
+</ul>
+
+<h3 data-anchor="dom-parameter"><a name="dom-parameter"></a>dom parameter</h3>
+
+<p>DataTables has a number of table control elements available and where they are placed in the DOM (i.e. the order) is defined by the <a href="//datatables.net/reference/option/dom"><code class="option" title="DataTables initialisation option">dom</code></a> parameter. This parameter can be a little confusing at first, but simply put, each letter in it is a DataTables feature. For Buttons the <code>B</code> character is the letter to use:</p>
+
+<pre><code class="multiline language-js">$('#myTable').DataTable( {
+    dom: 'Bfrtip',
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+</code></pre>
+
+<h3 data-anchor="Direct-insertion"><a name="Direct-insertion"></a>Direct insertion</h3>
+
+<p>If you are using one of the styling integration options, such as for Bootstrap, or you wish to have multiple button instances available, the <a href="//datatables.net/reference/api/buttons().container()"><code class="api" title="Buttons API method">buttons().container()</code></a> method can be used to obtain a jQuery object that holds the container element of the button set. Thus you can then insert the element anywhere you want:</p>
+
+<p>With <a href="//datatables.net/reference/option/buttons"><code class="option" title="DataTables initialisation option">buttons</code></a>:</p>
+
+<pre><code class="multiline language-js">var table = $('#example').DataTable( {
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+ 
+table.buttons().container()
+    .appendTo( $('.col-sm-6:eq(0)', table.table().container() ) );
+</code></pre>
+
+<p>And with a <code>new</code> constructor (note how it also uses the DataTables API to obtain the buttons container):</p>
+
+<pre><code class="multiline language-js">var table = $('#myTable').DataTable();
+
+new $.fn.dataTable.Buttons( table, {
+    buttons: [
+        'copy', 'excel', 'pdf'
+    ]
+} );
+
+table.buttons().container()
+    .appendTo( $('.col-sm-6:eq(0)', table.table().container() ) );
+</code></pre>
+
+<h2 data-anchor="Features"><a name="Features"></a>Features</h2>
+
+<p>Buttons provides the following features:</p>
+
+<div class="grid"><div class="unit w-1-2"><ul class="markdown">
+<li>Common interface and framework for DataTables related buttons</li>
+<li>Buttons can be activated with assignable key combinations</li>
+<li>HTML5 export options for modern browsers</li>
+</ul></div>
+
+<div class="unit w-1-2"><ul class="markdown">
+<li>Comprehensive API</li>
+<li>Fully internationalisable</li>
+<li>Column visibility control</li>
+<li>Print view</li>
+</ul></div></div>
+
+				</div>
+			</div>
+
+			<div class="fw-page-nav">
+				<div class="page-nav">
+					<div class="page-nav-title">Page navigation</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fw-footer">
+			<div class="skew"></div>
+			<div class="skew-bg"></div>
+			<div class="copyright">
+				<h4>DataTables</h4>
+				<p>
+					DataTables designed and created by <a href="//sprymedia.co.uk">SpryMedia Ltd</a>.<br>
+					&copy; 2007-2021 <a href="/license/mit">MIT licensed</a>. <a href="/privacy">Privacy policy</a>. <a href="/supporters">Supporters</a>.<br>
+					SpryMedia Ltd is registered in Scotland, company no. SC456502.
+				</p>
+			</div>
+		</div>
+
+		<script>
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-365466-5']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</body>
+</html>
